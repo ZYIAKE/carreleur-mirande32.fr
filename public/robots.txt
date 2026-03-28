@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.carreleur-mirande32.fr/sitemap.xml
