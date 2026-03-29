@@ -1,0 +1,21 @@
+/* Extra styles for secondary pages (service, city, legal, etc.) */
+.page-content { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
+.page-content h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 1rem; line-height: 1.2; }
+.page-content h2 { font-size: 1.3rem; font-weight: 700; margin: 2rem 0 0.75rem; }
+.page-content h3 { font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; }
+.page-content p { line-height: 1.75; margin-bottom: 1rem; }
+.page-content ul, .page-content ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+.page-content li { margin-bottom: 0.4rem; line-height: 1.6; }
+.breadcrumbs { font-size: 0.82rem; margin-bottom: 1.5rem; opacity: 0.7; }
+.breadcrumbs a { text-decoration: none; }
+.breadcrumbs a:hover { text-decoration: underline; }
+.cta-box { padding: 2rem; border-radius: 12px; text-align: center; margin: 2.5rem 0; }
+.process-steps { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.process-step { padding: 1.25rem; border-radius: 8px; text-align: center; }
+.process-step-num { font-size: 1.5rem; font-weight: 800; opacity: 0.3; margin-bottom: 0.3rem; }
+.benefits-list { list-style: none; padding: 0; }
+.benefits-list li { padding: 0.5rem 0; padding-left: 1.5rem; position: relative; }
+.benefits-list li::before { content: "\2713"; position: absolute; left: 0; font-weight: bold; }
+.faq-item-page { border-bottom: 1px solid rgba(0,0,0,0.08); padding: 1rem 0; }
+.faq-item-page summary { cursor: pointer; font-weight: 600; font-size: 0.95rem; }
+.faq-item-page p { margin-top: 0.5rem; font-size: 0.9rem; }
