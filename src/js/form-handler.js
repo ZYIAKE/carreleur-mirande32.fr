@@ -12,10 +12,11 @@ document.querySelectorAll('form[data-contact-form]').forEach(form => {
     if (honeypot) return;
 
     const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn ? btn.textContent : '';
     if (btn) { btn.disabled = true; btn.textContent = 'Envoi en cours...'; }
 
     try {
-      await fetch(SUPABASE_URL + '/functions/v1/site-form-submit', {
+      const res = await fetch(SUPABASE_URL + '/functions/v1/site-form-submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + SUPABASE_ANON_KEY },
         body: JSON.stringify({
@@ -26,10 +27,18 @@ document.querySelectorAll('form[data-contact-form]').forEach(form => {
           page_url: window.location.href, honeypot: ''
         })
       });
-    } catch {}
 
-    const success = form.querySelector('.form-success');
-    if (success) { form.style.display = 'none'; success.style.display = 'block'; }
-    else { form.innerHTML = '<p style="text-align:center;color:#22c55e;font-weight:600;padding:2rem;">Merci ! Votre demande a bien été envoyée. Nous vous recontactons sous 24h.</p>'; }
+      if (res.ok) {
+        const success = form.querySelector('.form-success');
+        if (success) { form.style.display = 'none'; success.style.display = 'block'; }
+        else { form.innerHTML = '<p style="text-align:center;color:#22c55e;font-weight:600;padding:2rem;">Merci ! Votre demande a bien \u00e9t\u00e9 envoy\u00e9e. Nous vous recontactons sous 24h.</p>'; }
+      } else {
+        if (btn) { btn.disabled = false; btn.textContent = originalText; }
+        alert('Une erreur est survenue. Veuillez r\u00e9essayer ou nous appeler directement.');
+      }
+    } catch {
+      if (btn) { btn.disabled = false; btn.textContent = originalText; }
+      alert('Erreur de connexion. Veuillez r\u00e9essayer.');
+    }
   });
 });

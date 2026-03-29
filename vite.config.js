@@ -5,10 +5,9 @@ import path from 'path';
 function getHtmlInputs() {
   const inputs = {};
   const root = path.resolve(__dirname);
-  const excluded = ['ville.html', 'chantier.html'];
 
   for (const file of fs.readdirSync(root)) {
-    if (file.endsWith('.html') && !excluded.includes(file)) {
+    if (file.endsWith('.html')) {
       inputs[file.replace('.html', '')] = path.resolve(root, file);
     }
   }

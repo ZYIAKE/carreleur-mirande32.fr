@@ -37,12 +37,12 @@ function renderReviews(container, data) {
   const rating = data.rating || '5.0';
   const count = data.total || data.reviews.length;
   const ratingNum = Math.max(0, Math.min(5, Math.round(parseFloat(rating))));
-  const stars = '★'.repeat(ratingNum) + '☆'.repeat(5 - ratingNum);
+  const stars = '\u2605'.repeat(ratingNum) + '\u2606'.repeat(5 - ratingNum);
 
-  let html = '<div class="avis-header"><span class="avis-stars" style="color:#F59E0B">' + stars + '</span> <strong>' + escHtml(String(rating)) + '</strong>/5 — ' + escHtml(String(count)) + ' avis Google</div>';
+  let html = '<div class="avis-header"><span class="avis-stars" style="color:#F59E0B">' + stars + '</span> <strong>' + escHtml(String(rating)) + '</strong>/5 \u2014 ' + escHtml(String(count)) + ' avis Google</div>';
   html += '<div class="avis-carousel"><div class="avis-track">';
   for (const r of data.reviews.slice(0, 6)) {
-    html += '<div class="avis-card"><p class="avis-text">"' + escHtml((r.comment || 'Excellent service !').substring(0, 200)) + '"</p><p class="avis-author">— ' + escHtml(r.reviewer_name || 'Client') + '</p></div>';
+    html += '<div class="avis-card"><p class="avis-text">"' + escHtml((r.comment || 'Excellent service !').substring(0, 200)) + '"</p><p class="avis-author">\u2014 ' + escHtml(r.reviewer_name || 'Client') + '</p></div>';
   }
   html += '</div></div>';
   container.innerHTML = html;
