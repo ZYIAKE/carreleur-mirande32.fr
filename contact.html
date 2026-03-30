@@ -16,7 +16,6 @@
   <link rel="canonical" href="https://www.carreleur-mirande32.fr/contact">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"ABC Entreprise TEST","telephone":"06 06 06 06 06","email":"contact@carreleur-mirande32.fr","address":{"@type":"PostalAddress","streetAddress":"123 rue de paris","addressLocality":"Mirande","postalCode":"32300","addressCountry":"FR"},"priceRange":"€€"}</script>
-<link rel="stylesheet" href="/extra-pages.css">
 </head>
 <body>
   
@@ -35,10 +34,9 @@
       <a href="/contact" class="nav-cta">Devis gratuit</a>
     </div>
   </div></div></nav>
-  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"ABC Entreprise TEST","description":"Carreleur professionnel à Mirande. Carrelage intérieur, Carrelage extérieur, Faïence & Mosaïque.","url":"https://www.carreleur-mirande32.fr","telephone":"06 06 06 06 06","email":"contact@carreleur-mirande32.fr","address":{"@type":"PostalAddress","streetAddress":"123 rue de paris","addressLocality":"Mirande","postalCode":"32300","addressCountry":"FR"},"priceRange":"$$","taxID":"851420661","areaServed":{"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","addressCountry":"FR"},"geoRadius":"50 km"}}</script>
 
-  <main class="page-content">
-    
+  
   <nav class="breadcrumbs" aria-label="Fil d'Ariane">
     <div class="container">
       <ol><li><a href="/">Accueil</a></li><li><span>Contact</span></li></ol>
@@ -46,109 +44,93 @@
   </nav>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.carreleur-mirande32.fr/"},{"@type":"ListItem","position":2,"name":"Contact"}]}</script>
 
-  <section class="page-header">
+  <header class="hero" role="banner">
     <div class="container">
-      <h1>Contactez ABC Entreprise TEST</h1>
-      <p class="subtitle">Demandez votre devis gratuit. Reponse sous 24h.</p>
+      <div class="hero-tag reveal">Carreleur</div>
+      <h1 class="reveal">Contactez ABC Entreprise TEST</h1>
+      <p class="hero-desc reveal">Demandez votre devis gratuit. Reponse sous 24h.</p>
+      <div class="hero-btns reveal">
+        <a href="tel:06 06 06 06 06" class="btn btn-amber">&#9742; 06 06 06 06 06</a>
+        <a href="/contact" class="btn btn-outline">Devis gratuit</a>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <section class="section">
+  <section>
     <div class="container">
-      <div class="two-col">
-        <div>
-          
-    <form data-contact-form class="contact-form">
-      <div class="form-group">
-        <label for="nom">Nom complet *</label>
-        <input type="text" id="nom" name="nom" required placeholder="Votre nom et pr&eacute;nom">
-      </div>
-      <div class="form-group">
-        <label for="telephone">T&eacute;l&eacute;phone *</label>
-        <input type="tel" id="telephone" name="telephone" required placeholder="06 00 00 00 00">
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="votre@email.fr">
-      </div>
-      <div class="form-group">
-        <label for="ville">Ville du chantier</label>
-        <input type="text" id="ville" name="ville" placeholder="Ville ou code postal">
-      </div>
-      <div class="form-group">
-        <label for="prestation">Type de prestation</label>
-        <select id="prestation" name="prestation">
-          <option value="">S&eacute;lectionnez une prestation</option>
-          <option value="Carrelage intérieur">Carrelage intérieur</option>
-              <option value="Carrelage extérieur">Carrelage extérieur</option>
-              <option value="Faïence &amp; Mosaïque">Faïence &amp; Mosaïque</option>
-              <option value="Rénovation de sol">Rénovation de sol</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="message">Votre projet *</label>
-        <textarea id="message" name="message" required placeholder="D&eacute;crivez votre projet, la surface, vos contraintes..."></textarea>
-      </div>
-      <div class="hp-field" aria-hidden="true">
-        <input type="text" name="website" tabindex="-1" autocomplete="off">
-      </div>
-      <button type="submit" class="btn btn-primary" style="width:100%;">Envoyer ma demande de devis</button>
-      <div class="form-success">
-        <p>&#x2705; Merci ! Votre demande a bien &eacute;t&eacute; envoy&eacute;e.<br>Nous vous recontactons sous 24h.</p>
-      </div>
-    </form>
-        </div>
-        <div>
-          <div style="background:var(--color-bg-alt);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;">
-            <h3>Coordonn&eacute;es</h3>
-            <p style="margin-top:1rem;">
-              <strong>&#128205; Adresse</strong><br>
-              123 rue de paris<br>
-              32300 Mirande
-            </p>
-            <p style="margin-top:1rem;">
-              <strong>&#9742; T&eacute;l&eacute;phone</strong><br>
-              <a href="tel:06 06 06 06 06" style="font-size:1.2rem;font-weight:700;">06 06 06 06 06</a>
-            </p>
-            <p style="margin-top:1rem;">
-              <strong>&#9993; Email</strong><br>
-              <a href="mailto:contact@carreleur-mirande32.fr">contact@carreleur-mirande32.fr</a>
-            </p>
+      
+    <div class="contact-split">
+      <div class="contact-form-card reveal">
+        <h3>D&eacute;crivez votre projet</h3>
+        <form class="contact-form" data-contact-form>
+          <input type="text" name="nom" placeholder="Votre nom" required>
+          <input type="email" name="email" placeholder="Votre email" required>
+          <input type="tel" name="telephone" placeholder="Votre t&eacute;l&eacute;phone" required>
+          <select name="besoin">
+            <option value="">Choisir une prestation</option>
+            <option value="Carrelage intérieur">Carrelage intérieur</option>
+            <option value="Carrelage extérieur">Carrelage extérieur</option>
+            <option value="Faïence &amp; Mosaïque">Faïence &amp; Mosaïque</option>
+            <option value="Rénovation de sol">Rénovation de sol</option>
+          </select>
+          <textarea name="description" placeholder="D&eacute;crivez votre projet, la surface, vos contraintes..." rows="4"></textarea>
+          <div style="position:absolute;left:-9999px;" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1" autocomplete="off">
           </div>
-          <div style="background:var(--color-primary-light);border-radius:var(--radius);padding:2rem;">
-            <h3>Zone d'intervention</h3>
-            <p style="margin-top:0.5rem;">Nous intervenons &agrave; Mirande et dans un rayon de 50 km, couvrant 0+ communes.</p>
-            <a href="/zone-intervention" style="color:var(--color-primary);font-weight:600;display:inline-block;margin-top:0.75rem;">Voir toutes les villes &rarr;</a>
+          <div class="submit-row"><button type="submit" class="btn-submit">Envoyer ma demande</button></div>
+          <div class="form-success" style="display:none;">
+            <p>&#x2705; Merci ! Votre demande a bien &eacute;t&eacute; envoy&eacute;e. Nous vous recontactons sous 24h.</p>
           </div>
-        </div>
+        </form>
       </div>
+      <div class="contact-info reveal">
+        <h3>Coordonn&eacute;es</h3>
+        <p style="margin-top:1rem;">
+          <strong>&#128205; Adresse</strong><br>
+          123 rue de paris<br>
+          32300 Mirande
+        </p>
+        <p style="margin-top:1rem;">
+          <strong>&#9742; T&eacute;l&eacute;phone</strong><br>
+          <a href="tel:06 06 06 06 06" style="font-size:1.2rem;font-weight:700;">06 06 06 06 06</a>
+        </p>
+        <p style="margin-top:1rem;">
+          <strong>&#9993; Email</strong><br>
+          <a href="mailto:contact@carreleur-mirande32.fr">contact@carreleur-mirande32.fr</a>
+        </p>
+        <p style="margin-top:1.5rem;">
+          <strong>Zone d'intervention</strong><br>
+          Nous intervenons &agrave; Mirande et dans un rayon de 50 km, couvrant 0+ communes.
+        </p>
+        <a href="/zone-intervention" style="display:inline-block;margin-top:0.75rem;font-weight:600;">Voir toutes les villes &rarr;</a>
+      </div>
+    </div>
     </div>
   </section>
 
   
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="overline">Localisation</span>
-          <h2>Nous trouver</h2>
-        </div>
-        <div style="border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08);">
-          <iframe
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=ABC%20Entreprise%20TEST%20Mirande"
-            width="100%" height="400" style="border:0;display:block;" loading="lazy"
-            allowfullscreen referrerpolicy="no-referrer-when-downgrade"
-            title="Localisation ABC Entreprise TEST">
-          </iframe>
-        </div>
+  <section>
+    <div class="container">
+      <div class="centered">
+      <p class="section-label reveal">Localisation</p>
+      <h2 class="section-title reveal">Nous trouver</h2>
+    </div>
+      <div style="margin-top:2rem;border-radius:var(--r,12px);overflow:hidden;">
+        <iframe
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=ABC%20Entreprise%20TEST%20Mirande"
+          width="100%" height="400" style="border:0;display:block;" loading="lazy"
+          allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+          title="Localisation ABC Entreprise TEST">
+        </iframe>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer role="contentinfo"><div class="container">
     <div class="footer-grid">
       <div class="footer-col"><div class="footer-logo"><div class="logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><span class="logo-name">ABC Entreprise TEST</span></div><p class="footer-nap">ABC Entreprise TEST<br>123 rue de paris<br>32300 Mirande</p><p class="footer-nap"><a href="tel:06 06 06 06 06">06 06 06 06 06</a><br><a href="mailto:contact@carreleur-mirande32.fr">contact@carreleur-mirande32.fr</a></p></div>
       <div class="footer-col"><h4>Services</h4><ul><li><a href="/carrelage-interieur">Carrelage intérieur</a></li><li><a href="/carrelage-exterieur">Carrelage extérieur</a></li><li><a href="/faience-mosaique">Faïence & Mosaïque</a></li><li><a href="/renovation-de-sol">Rénovation de sol</a></li></ul></div>
-      <div class="footer-col"><h4>Infos</h4><ul><li><a href="#">À propos</a></li><li><a href="#">Avis</a></li><li><a href="#">Réalisations</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Infos</h4><ul><li><a href="/contact">À propos</a></li><li><a href="/contact">Avis</a></li><li><a href="/contact">Réalisations</a></li><li><a href="#contact">Contact</a></li></ul></div>
       <div class="footer-col"><h4>Zones</h4><p>Interventions à Mirande, ,  et alentours.</p><a href="#zone" class="zlink">Voir nos zones <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 6 15 12 9 18"/></svg></a></div>
     </div>
     <div class="footer-bottom"><span>© ABC Entreprise TEST — Carreleur à Mirande — Site par <a href="https://atlinker.com" target="_blank" rel="noopener">atlinker</a></span><div class="footer-legal"><a href="plan-du-site.html">Plan du site</a><span>•</span><a href="mentions-legales.html">Mentions légales</a><span>•</span><a href="politique-confidentialite.html">Confidentialité</a></div></div>
