@@ -117,5 +117,6 @@
     document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',()=>{const a=btn.nextElementSibling;const open=a.classList.contains('open');document.querySelectorAll('.faq-a.open').forEach(el=>{el.classList.remove('open');el.previousElementSibling.classList.remove('open');el.previousElementSibling.setAttribute('aria-expanded','false')});if(!open){a.classList.add('open');btn.classList.add('open');btn.setAttribute('aria-expanded','true')}})});
     document.querySelectorAll('form').forEach(f=>{f.addEventListener('submit',function(e){e.preventDefault();const msg=document.createElement('div');msg.className='form-success';msg.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><polyline points="20 6 9 17 4 12"/></svg> Merci ! Réponse sous 24h.';f.style.display='none';f.parentNode.insertBefore(msg,f.nextSibling)})});
   </script>
+<script type="module" src="/src/js/form-handler.js"></script>
 </body>
 </html>
